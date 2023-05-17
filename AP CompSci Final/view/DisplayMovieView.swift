@@ -28,8 +28,7 @@ struct DisplayMovieView: View {
                             let movieData = [movieTitle[index],
                                              releaseDate[index],
                                              movieGenre[index],
-                                             movieLength[index],
-                                             movieID[index]]
+                                             movieLength[index]]
                             
                             NavigationLink (destination: DetailView (movieData: movieData)) {
                                 
@@ -45,23 +44,23 @@ struct DisplayMovieView: View {
                                             .foregroundColor(.gray)
                                             .fontDesign(.serif)
                                         
-                                        Image(systemName: "hand.thumbsup.fill")
-                                            .font(.system(size:20))
-                                            .foregroundColor(greenLike (likeCount: likeIcon[movieData[4]]))
-                                    
-                                        .onTapGesture {
-                                            likeIcon[movieData[4]] = updateLikeCount (count: likeIcon[movieData[4]])
-                                            }
-                                        
-                                        Image(systemName: "hand.thumbsdown.fill")
-                                            .font(.system(size:20))
-                                            .foregroundColor(redDislike (count: dislikeIcon[movieData[4]]))
-                                    
-                                        .onTapGesture {
-                                            dislikeIcon[movieData[4]] = updateDislikeCount (count: dislikeIcon[movieData[4]])
-                                            }
-                                       
                                     }
+//                                        Image(systemName: "hand.thumbsup.fill")
+//                                            .font(.system(size:20))
+//                                            .foregroundColor(greenLike (likeCount: likeIcon[movieTitle.count]))
+//
+//                                            .onTapGesture {
+//                                                likeIcon[movieTitle.count] = updateLikeCount (likeCount: likeIcon[movieTitle.count])
+//                                            }
+//
+//                                        Image(systemName: "hand.thumbsdown.fill")
+//                                            .font(.system(size:20))
+//                                            .foregroundColor(redDislike (dislikeCount: dislikeIcon[movieTitle.count]))
+//
+//                                            .onTapGesture {
+//                                                dislikeIcon[movieTitle.count] = updateDislikeCount (dislikeCount: dislikeIcon[movieTitle.count])
+                                            
+                                    
                                 }
                             }
                         }

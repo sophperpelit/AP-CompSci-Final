@@ -91,6 +91,7 @@
 		2E2C40892A147104005B77D3 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				2E81660829BB821500681A83 /* data.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -111,6 +112,14 @@
 				2E4607EE29F96B0A00DBAF6E /* button.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		2E2C408D2A150679005B77D3 /* "controller" */ = {
+			isa = PBXGroup;
+			children = (
+				2E4607EC29F9641700DBAF6E /* function.swift */,
+			);
+			path = "\"controller\"";
 			sourceTree = "<group>";
 		};
 		2E8165D029BB7F6500681A83 = {
@@ -137,14 +146,13 @@
 		2E8165DB29BB7F6500681A83 /* AP CompSci Final */ = {
 			isa = PBXGroup;
 			children = (
+				2E2C408D2A150679005B77D3 /* "controller" */,
 				2E2C408C2A14712C005B77D3 /* components */,
 				2E2C408A2A14710D005B77D3 /* view */,
 				2E2C40892A147104005B77D3 /* model */,
 				2E8165DC29BB7F6500681A83 /* AP_CompSci_FinalApp.swift */,
 				2E8165E029BB7F6700681A83 /* Assets.xcassets */,
 				2E8165E229BB7F6700681A83 /* Preview Content */,
-				2E81660829BB821500681A83 /* data.swift */,
-				2E4607EC29F9641700DBAF6E /* function.swift */,
 			);
 			path = "AP CompSci Final";
 			sourceTree = "<group>";
